@@ -16,6 +16,8 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
-    "cors": "^2.8.5"
+    "cors": "^2.8.5",
+    "graphql": "^16.6.0",
+    "ra-data-graphql": "^4.3.0"
   }
 }
