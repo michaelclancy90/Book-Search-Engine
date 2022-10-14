@@ -12,19 +12,9 @@
 
 [5. TECHNOLOGIES USED](#TECHNOLOGIESUSED)
 
-[6. CONTRIBUTE](#CONTRIBUTE)
-
-[7. TESTS](#TESTS)
-
-[8. LICENCE](#LICENCE)
-
-[9. COLLABORATORS](#COLLABORATORS)
-
 <a id="DESCRIPTION"></a>
 <br />
-AS AN employer looking for candidates with experience building single-page applications
-I WANT to view a potential employee's deployed React portfolio of work samples
-SO THAT I can assess whether they're a good candidate for an open position
+My task for this assignment was to create a Book Search Engine.
 <br />
 
 <a id="USERSTORY"></a>
@@ -44,32 +34,36 @@ SO THAT I can keep a list of books to purchase
 
 ## **Acceptance Criteria**
 
-<br />
-GIVEN a single-page application portfolio for a web developer <br />
-WHEN I load the portfolio <br />
-THEN I am presented with a page containing a header, a section for content, and a footer <br />
-WHEN I view the header <br />
-THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio <br />
-WHEN I view the navigation titles <br />
-THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted <br />
-WHEN I click on a navigation title <br />
-THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted <br />
-WHEN I load the portfolio the first time <br />
-THEN the About Me title and section are selected by default <br />
-WHEN I am presented with the About Me section <br />
-THEN I see a recent photo or avatar of the developer and a short bio about them <br />
-WHEN I am presented with the Portfolio section <br />
-THEN I see titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository <br />
-WHEN I am presented with the Contact section <br />
-THEN I see a contact form with fields for a name, an email address, and a message <br />
-WHEN I move my cursor out of one of the form fields without entering text <br />
-THEN I receive a notification that this field is required <br />
-WHEN I enter text into the email address field <br />
-THEN I receive a notification if I have entered an invalid email address <br />
-WHEN I am presented with the Resume section <br />
-THEN I see a link to a downloadable resume and a list of the developer’s proficiencies <br />
-WHEN I view the footer <br />
-THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) <br />
+````
+GIVEN a book search engine
+WHEN I load the search engine
+THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+WHEN I click on the Search for Books menu option
+THEN I am presented with an input field to search for books and a submit button
+WHEN I am not logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+WHEN I click on the Login/Signup menu option
+THEN a modal appears on the screen with a toggle between the option to log in or sign up
+WHEN the toggle is set to Signup
+THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+WHEN the toggle is set to Login
+THEN I am presented with two inputs for an email address and a password and login button
+WHEN I enter a valid email address and create a password and click on the signup button
+THEN my user account is created and I am logged in to the site
+WHEN I enter my account’s email address and password and click on the login button
+THEN I the modal closes and I am logged in to the site
+WHEN I am logged in to the site
+THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+WHEN I am logged in and enter a search term in the input field and click the submit button
+THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+WHEN I click on the Save button on a book
+THEN that book’s information is saved to my account
+WHEN I click on the option to see my saved books
+THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+WHEN I click on the Remove button on a book
+THEN that book is deleted from my saved books list
+WHEN I click on the Logout button
+THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  ```
 
 <a id="GITHUBACCOUNT"></a>
 
@@ -94,3 +88,4 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 - [https://www.apollographql.com/docs/](https://www.apollographql.com/docs/)
 
  <br />
+````
