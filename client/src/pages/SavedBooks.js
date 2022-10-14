@@ -26,10 +26,9 @@ const SavedBooks = () => {
       return false;
     }
     try {
-      await deleteBook({ variables: { bookId } });
+      await removeBook({ variables: { bookId } });
 
       // upon success, remove book's id from localStorage
-      refetch();
       removeBookId(bookId);
     } catch (err) {
       console.log('something went wrong :(');
@@ -38,7 +37,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so
-  if (!userDataLength) {
+  if (loading) {
     return <h2>LOADING...</h2>;
   }
 
