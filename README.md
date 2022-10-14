@@ -32,11 +32,11 @@ SO THAT I can assess whether they're a good candidate for an open position
 ## **User Story**
 
 <br />
-AS A manager at an internet retail company
+AS AN avid reader
  <br />
-I WANT a back end for my e-commerce website that uses the latest technologies
+I WANT to search for new books to read
  <br />
-SO THAT my company can compete with other e-commerce companies
+SO THAT I can keep a list of books to purchase
 
 <br />
 
